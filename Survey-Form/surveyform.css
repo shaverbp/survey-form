@@ -1,0 +1,59 @@
+.text-center{
+  text-align: center;
+}
+.form-control {
+
+}
+/* This is the span class for the "optional" portion of the Age menu" */
+.class {
+
+}
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+  background-size: cover;
+#title {
+
+}
+
+#description {
+
+}
+
+#survey-form {
+  background-color: slateGray;
+  opacity: 0.9;
+  display:block;
+  height: auto;
+  max-width: 886px;
+}
+
+#name-label{
+    border-radius: 50%
+}
+#email-label {
+    border-radius: 50%
+}
+#number-label {
+    border-radius: 50%
+}
+
+#dropdown {
+
+}
+
+#comments {
+  overflow: scroll;
+}
+
+#submit {
+  background-color: #35b065;
+}

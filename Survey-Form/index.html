@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="surveyform.css">
+    <link rel="<script type="text/javascript" href="surveyform.js">
+
+    </script>"
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+              type="textarea"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+              type="email"
+              name="email"
+              id="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              placeholder="Enter your email"
+              required>
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age<span class "clue">(optional)</span></label>
+          <input
+              type="number"
+              name="age"
+              id="number"
+              pattern="0-9"
+              min="1"
+              max="100"
+              placeholder="age">
+        </div>
+        <div class="form-group">
+              <p>Which option best describes your current role?</p>
+              <select id="dropdown" name="role" class="form-control">
+                <option disabled selected value>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Full-time job">Full-time job</option>
+                <option value="Full-time learner">Full-time learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+              </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label>
+          <input
+              type="radio"
+              id="radio"
+              name="radio"
+              value="Definitely">
+          Definitely</label>
+            <input type="radio" id="radio" name="radio" value="Maybe">
+            <label for="radio">Maybe</label>
+              <input type="radio" id="radio" name="radio" value="Not Sure">
+              <label for="radio">Not sure</label>
+                <label for="checkbox">What would you like to see improved? (Check all that apply)</label>
+                <input type="checkbox" id="checkbox" name="checkbox" value="Front-end Projects">
+                  <label for="checkbox">Front-end Projects</label>
+                  <input type="checkbox" id="checkbox" name="checkbox" value="Back-end Projects">
+                    <label for="checkbox">Back-end Projects</label>
+                    <input type="checkbox" id="checkbox" name="checkbox" value="Data Visualization">
+                      <label for="checkbox">Data Visualization</label>
+                      <input type="checkbox" id="checkbox" name="checkbox" value="Open Source Community">
+                        <label for="checkbox">Open Source Community</label>
+                        <input type="checkbox" id="checkbox" name="checkbox" value="Gitter help rooms">
+                        <label for="checkbox">Gitter help rooms</label>
+                        <input type="checkbox" id="checkbox" name="checkbox" value="Videos">
+                        <label for="checkbox">Videos</label>
+                        <input type="checkbox" id="checkbox" name="checkbox" value="City Meetups">
+                      <label for="checkbox">City Meetups</label>
+                      <input type="checkbox" id="checkbox" name="checkbox" value="Wiki">
+                    <label for="checkbox">Wiki</label>
+                    <input type="checkbox" id="checkbox" name="checkbox" value="Forum">
+                  <label for="checkbox">Forum</label>
+                  <input type="checkbox" id="checkbox" name="checkbox" value="Additional Courses">
+                <label for="checkbox">Additional Courses</label>
+                <label for="comments"> Any comments or suggestions?</label>
+            <textarea id="comments" name="comments"></textarea>
+            <button type="submit" id="submit" onclick="myFunction()">Submit</button>
+        </fieldset>
+        <p id="success"></p>
+      </form>
+
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">  </script>
+
+      <script>
+        function myFunction() {
+          document.getElementById("success").innerHTML = "Thanks!";
+        }
+      </script>
+  </body>
+</html>
